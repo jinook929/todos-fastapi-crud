@@ -36,10 +36,12 @@ def init_db():
 app = FastAPI()
 
 origins = [
+    "http://localhost",
     "http://localhost:5173",
     "http://localhost:4173",
     "http://localhost:3030",
     "https://jinookjung.dev",
+    "http://jncweb.icu"
 ]
 
 app.add_middleware(
