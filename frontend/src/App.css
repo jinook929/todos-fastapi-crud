@@ -49,16 +49,18 @@ ul {
 }
 
 li {
-  min-width: 300px;
+  min-width: 280px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
   padding-block: 0.5em;
+  gap: 1rem
 }
 
 li span:has(button) {
   display: flex;
+  justify-content: space-between;
   gap: 1em;
 }
 
@@ -71,9 +73,49 @@ form {
   gap: 1em;
   justify-content: center;
   align-items: center;
+  padding-block: 1rem;
 }
 
 input[type="text"] {
   height: 32px;
   padding: 0 1em;
+  width: calc(100% - 2rem);
+}
+
+button:where(#add-todo) {
+  font-size: 1rem;
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  div#root {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.65em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  li {
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1em;
+  }
+  li span:has(button) {
+    width: 100%;
+    gap: 0.5em;
+  }
+  button:not(#add-todo) {
+    font-size: 0.75rem;
+    min-width: 85px;
+  }
+  form {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  input[type="text"] {
+    margin-inline: 1rem;
+  }
 }

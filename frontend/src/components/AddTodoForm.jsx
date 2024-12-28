@@ -19,7 +19,7 @@ const AddTodoForm = ({ addTodo }) => {
         onChange={(e) => setTask(e.target.value)}
         placeholder="Enter todo"
       />
-      <button type="submit">Add Todo</button>
+      <button id="add-todo" type="submit">Add Todo</button>
     </form>
   );
 }

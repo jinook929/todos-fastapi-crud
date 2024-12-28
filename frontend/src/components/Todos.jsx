@@ -59,8 +59,8 @@ const TodoList = () => {
 
   return (
     <div>
-      <h2>TODOs</h2>
       <AddTodoForm addTodo={addTodo} />
+      <h2>TODOs</h2>
       <ul>
         {todos
           .sort((a, b) => Number(a.completed) - Number(b.completed))
