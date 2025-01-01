@@ -41,7 +41,7 @@ origins = [
     "http://localhost:4173",
     "http://localhost:3030",
     "https://jinookjung.dev",
-    "http://jncweb.icu:3000"
+    "http://jncweb.icu"
 ]
 
 app.add_middleware(
