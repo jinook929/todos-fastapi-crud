@@ -41,7 +41,7 @@ origins = [
     "http://localhost:4173",
     "http://localhost:3030",
     "https://jinookjung.dev",
-    "http://jncweb.icu"
+    "http://jncweb.icu/todo-app"
 ]
 
 app.add_middleware(
